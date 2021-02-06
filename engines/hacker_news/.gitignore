@@ -1,0 +1,9 @@
+.bundle/
+log/*.log
+pkg/
+engines/hacker_news/spec/dummy/db/*.sqlite3
+engines/hacker_news/spec/dummy/db/*.sqlite3-journal
+engines/hacker_news/spec/dummy/db/*.sqlite3-*
+engines/hacker_news/spec/dummy/log/*.log
+engines/hacker_news/spec/dummy/storage/
+engines/hacker_news/spec/dummy/tmp/

@@ -1,0 +1,13 @@
+<% @stories.each do |story| %>
+  <div class="media mb-3">
+    <div class="media-body">
+      <h5 class="mt-0 mb-1">
+        <a href="<%= story['url'] %>"><%= story['title'] %></a>
+      </h5>
+      <%= story['score'] %> points
+      by <%= story['by'] %>
+      <%= time_ago_in_words(story['time']) %> ago
+      | <%= story['descendants'] %> comments
+    </div>
+  </div>
+<% end %>
