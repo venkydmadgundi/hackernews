@@ -1,7 +1,9 @@
     class HomesController < ApplicationController
       # GET /homes
       def index
-        @stories = client.topstories(0, 10)
+ #       hacker_client = Hackernews::Client.new
+#        puts hacker_client.methods.sort
+        @stories = client.askstories(0, 10)
         render json: @stories
       end
     end
